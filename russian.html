@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шёпот древнего леса — За гранью сказаний</title>
+    <link rel="stylesheet" href="russian.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">✧ За гранью сказаний</a>
+
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="index.html#worlds">Миры</a>
+            <a href="#creatures">Существа</a>
+            <a href="#stories">Предания</a>
+            <a href="#beliefs">Поверья</a>
+            <a href="#mysticMap">Карта</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="russian-hero">
+            <div class="hero-content">
+                <span class="subtitle">МИР РУССКОГО ФОЛЬКЛОРА</span>
+
+                <h1>Шёпот древнего леса</h1>
+
+                <p class="description">
+                    Там, где деревья помнят забытые имена,
+                    реки скрывают древние тайны,
+                    а за стенами старых изб
+                    слышатся шаги невидимых хозяев.
+                </p>
+
+                <a href="#creatures" class="main-button">
+                    Войти в древний лес
+                </a>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="section-heading">
+                <span class="section-label">Забытые верования</span>
+                <h2>Мир, который существовал рядом</h2>
+            </div>
+
+            <p>
+                В народных представлениях славян природа
+                была населена невидимыми существами.
+                У леса был свой хозяин, у воды — свой,
+                а в каждом доме мог обитать дух-хранитель.
+            </p>
+
+            <p>
+                О них рассказывали у печи, предупреждали
+                детей и передавали истории из поколения
+                в поколение. Одни духи помогали людям,
+                другие могли напугать или наказать
+                за нарушение старинных обычаев.
+            </p>
+        </section>
+
+        <section class="creatures-section" id="creatures">
+            <div class="section-heading">
+                <span class="section-label">Древние духи</span>
+                <h2>Хозяева невидимого мира</h2>
+
+                <p>
+                    Три таинственных существа,
+                    которым в народных поверьях
+                    принадлежали лес, вода и дом.
+                </p>
+            </div>
+
+            <div class="creature-grid">
+
+                <article class="creature-card">
+                    <div class="creature-image leshy"></div>
+
+                    <h3>Леший</h3>
+
+                    <p>
+                        Дух-хозяин леса, который не имеет
+                        постоянного облика и способен
+                        менять свою внешность.
+                        По поверьям, он сбивал путников
+                        с дороги и подражал знакомым голосам.
+                    </p>
+
+                    <button class="creature-button" data-creature="leshy">
+                        Узнать историю
+                    </button>
+                </article>
+
+                <article class="creature-card">
+                    <div class="creature-image vodyanoy"></div>
+
+                    <h3>Водяной</h3>
+
+                    <p>
+                        Дух-хозяин рек, озёр и болот.
+                        Его часто представляли стариком
+                        с рыбьими чертами, покрытым
+                        тиной и водорослями.
+                    </p>
+
+                    <button class="creature-button" data-creature="vodyanoy">
+                        Узнать историю
+                    </button>
+                </article>
+
+                <article class="creature-card">
+                    <div class="creature-image domovoy"></div>
+
+                    <h3>Домовой</h3>
+
+                    <p>
+                        Дух-покровитель жилища,
+                        которого представляли
+                        небольшим косматым стариком.
+                        Считалось, что он охраняет дом,
+                        но может тревожить нерадивых хозяев.
+                    </p>
+
+                    <button class="creature-button" data-creature="domovoy">
+                        Узнать историю
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="stories-section" id="stories">
+            <div class="story-panel">
+                <span class="section-label">Мистическая история</span>
+
+                <h2>Книга забытых преданий</h2>
+
+                <p>
+                    «Тропа, которой нет» — история молодого путника
+                    Егора, который заблудился в древнем лесу.
+                </p>
+
+                <p>
+                    Пять глав. Три таинственных духа.
+                    Одна дорога, которая может привести домой.
+                </p>
+
+                <button class="main-button" id="openBook">
+                    Открыть книгу
+                </button>
+            </div>
+        </section>
+
+        <section class="night-section" id="night">
+            <div class="section-heading">
+                <span class="section-label">После захода солнца</span>
+                <h2>Ночные предания</h2>
+
+                <p>
+                    Когда деревня засыпала,
+                    люди рассказывали истории,
+                    которые не решались повторять днём.
+                </p>
+            </div>
+
+            <div class="night-grid">
+
+                <article class="night-card">
+                    <div class="night-image night-one"></div>
+
+                    <h3>Тропа, которой не было</h3>
+
+                    <p>
+                        Путник услышал знакомый голос
+                        среди деревьев, но дорога
+                        привела его в незнакомую чащу.
+                    </p>
+
+                    <button class="night-button" data-night="path">
+                        Читать предание
+                    </button>
+                </article>
+
+                <article class="night-card">
+                    <div class="night-image night-two"></div>
+
+                    <h3>Голос из чёрной воды</h3>
+
+                    <p>
+                        На берегу старого озера
+                        кто-то звал рыбака по имени,
+                        хотя вокруг не было ни души.
+                    </p>
+
+                    <button class="night-button" data-night="light">
+                        Читать предание
+                    </button>
+                </article>
+
+                <article class="night-card">
+                    <div class="night-image night-three"></div>
+
+                    <h3>Шаги за печью</h3>
+
+                    <p>
+                        В пустой избе каждую ночь
+                        слышались осторожные шаги,
+                        но утром двери оставались закрытыми.
+                    </p>
+
+                    <button class="night-button" data-night="village">
+                        Читать предание
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="beliefs-section" id="beliefs">
+            <div class="section-heading">
+                <span class="section-label">Народная память</span>
+                <h2>Запретные поверья</h2>
+
+                <p>
+                    Старые приметы и запреты,
+                    которыми объясняли
+                    непонятные явления вокруг.
+                    Нажмите на поверье, чтобы узнать больше.
+                </p>
+            </div>
+
+            <div class="beliefs-grid">
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🌲</div>
+                    <h3>Не откликайся в лесу</h3>
+                    <p class="belief-hint">Что скрывалось за запретом?</p>
+                    <p class="belief-secret">
+                        По поверьям, Леший мог подражать
+                        человеческим голосам и заманивать
+                        путников в чащу.
+                    </p>
+                </article>
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🌊</div>
+                    <h3>Не тревожь ночную воду</h3>
+                    <p class="belief-hint">Откройте старинное поверье</p>
+                    <p class="belief-secret">
+                        В народных рассказах опасные
+                        глубины связывали с Водяным,
+                        хозяином рек и озёр.
+                    </p>
+                </article>
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🏚️</div>
+                    <h3>Не обижай Домового</h3>
+                    <p class="belief-hint">Почему его уважали?</p>
+                    <p class="belief-secret">
+                        Считалось, что Домовой любит порядок,
+                        заботится о доме и может беспокоить
+                        хозяев, если они ссорятся.
+                    </p>
+                </article>
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🪞</div>
+                    <h3>Разбитое зеркало</h3>
+                    <p class="belief-hint">Узнайте значение приметы</p>
+                    <p class="belief-secret">
+                        В поздних народных суевериях
+                        разбитое зеркало связывали
+                        с возможными несчастьями.
+                    </p>
+                </article>
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🌙</div>
+                    <h3>Не свисти в доме</h3>
+                    <p class="belief-hint">Что говорили старики?</p>
+                    <p class="belief-secret">
+                        По распространённой примете,
+                        свист в доме мог прогнать
+                        благополучие и достаток.
+                    </p>
+                </article>
+
+                <article class="belief-card">
+                    <div class="belief-symbol">🔥</div>
+                    <h3>Огонь домашнего очага</h3>
+                    <p class="belief-hint">Почему его берегли?</p>
+                    <p class="belief-secret">
+                        Домашний очаг связывали
+                        с теплом, защитой семьи
+                        и благополучием жилища.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="secret-section" id="secret">
+            <div class="section-heading">
+                <span class="section-label">Скрыто от посторонних</span>
+                <h2>Ворота забытого леса</h2>
+
+                <p>
+                    Говорили, что в глубине леса
+                    есть место, куда не ведёт
+                    ни одна знакомая тропа.
+                </p>
+            </div>
+
+            <button class="secret-door" id="secretDoor">
+                <span class="door-glow"></span>
+                <span class="door-image"></span>
+            </button>
+
+            <p class="door-hint">
+                Прикоснитесь к воротам,
+                чтобы услышать забытое предание.
+            </p>
+        </section>
+
+        <section class="archive-section" id="archive">
+            <div class="section-heading">
+                <span class="section-label">Следы прошлого</span>
+                <h2>Архив древних поверий</h2>
+
+                <p>
+                    Предметы, обычаи и загадки,
+                    сохранившиеся в народной памяти.
+                </p>
+            </div>
+
+            <div class="archive-grid">
+
+                <article class="archive-card">
+                    <img src="images/russian-mirror.png" alt="Старинное зеркало">
+
+                    <h3>Старинное зеркало</h3>
+
+                    <p>
+                        Предмет, с которым связывали
+                        многочисленные приметы
+                        и гадательные обряды.
+                    </p>
+
+                    <button class="archive-button" data-archive="mirror">
+                        Исследовать
+                    </button>
+                </article>
+
+                <article class="archive-card">
+                    <img src="images/russian-chest.png" alt="Старинный сундук">
+
+                    <h3>Сундук с оберегами</h3>
+
+                    <p>
+                        Узнайте о предметах,
+                        которым приписывали
+                        защитные свойства.
+                    </p>
+
+                    <button class="archive-button" data-archive="chest">
+                        Исследовать
+                    </button>
+                </article>
+
+                <article class="archive-card">
+                    <img src="images/russian-key.png" alt="Старинный ключ">
+
+                    <h3>Ключ от тайны</h3>
+
+                    <p>
+                        Разгадайте загадку,
+                        чтобы открыть
+                        скрытую запись.
+                    </p>
+
+                    <button class="archive-button" data-archive="key">
+                        Исследовать
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="guardian-section" id="guardian">
+            <div class="section-heading">
+                <span class="section-label">Испытание знаний</span>
+                <h2>Хранитель древних преданий</h2>
+
+                <p>
+                    Ответьте на пять вопросов
+                    о русском фольклоре
+                    и получите звание хранителя.
+                </p>
+            </div>
+
+            <div class="guardian-box" id="guardianBox">
+
+                <div id="guardianStart">
+                    <h3>Готовы пройти испытание?</h3>
+
+                    <p>
+                        Вас ждут пять вопросов
+                        о духах и старинных поверьях.
+                    </p>
+
+                    <button class="main-button" id="startGuardian">
+                        Начать испытание
+                    </button>
+                </div>
+
+                <div id="guardianQuiz" hidden>
+                    <p id="guardianProgress"></p>
+
+                    <h3 id="guardianQuestion"></h3>
+
+                    <div class="guardian-answers" id="guardianAnswers"></div>
+
+                    <p id="guardianFeedback"></p>
+
+                    <button class="main-button" id="guardianNext" hidden>
+                        Следующий вопрос
+                    </button>
+                </div>
+
+                <div id="guardianFinish" hidden>
+                    <h3 id="guardianResultTitle"></h3>
+
+                    <p id="guardianResultText"></p>
+
+                    <p id="guardianScore"></p>
+
+                    <div class="guardian-certificate" id="guardianCertificate">
+                        <span>✧ За гранью сказаний ✧</span>
+
+                        <h3>Свидетельство хранителя</h3>
+
+                        <p>Мир русского фольклора</p>
+
+                        <h2 id="certificateRank"></h2>
+
+                        <p id="certificateScore"></p>
+
+                        <span>Шёпот древнего леса</span>
+                    </div>
+
+                    <button class="main-button" id="saveCertificate">
+                        Сохранить свидетельство
+                    </button>
+
+                    <button class="main-button" id="restartGuardian">
+                        Пройти ещё раз
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mystic-map-section" id="mysticMap">
+            <div class="section-heading">
+                <span class="section-label">Места забытых преданий</span>
+                <h2>Мистическая карта</h2>
+
+                <p>
+                    Откройте семь таинственных мест древнего леса.
+                </p>
+            </div>
+
+            <div class="mystic-map">
+                <div class="map-land" aria-label="Карта мистических мест древнего леса">
+                    <button class="map-pin pin-leshy" data-place="leshy" aria-label="Леший" title="Леший">✦</button>
+                    <button class="map-pin pin-domovoy" data-place="domovoy" aria-label="Домовой" title="Домовой">✦</button>
+                    <button class="map-pin pin-vodyanoy" data-place="vodyanoy" aria-label="Водяной" title="Водяной">✦</button>
+                    <button class="map-pin pin-oak" data-place="oak" aria-label="Древний дуб" title="Древний дуб">✦</button>
+                    <button class="map-pin pin-ruins" data-place="ruins" aria-label="Забытые руины" title="Забытые руины">✦</button>
+                    <button class="map-pin pin-door" data-place="door" aria-label="Тайная дверь" title="Тайная дверь">✦</button>
+                    <button class="map-pin pin-beliefs" data-place="beliefs" aria-label="Запретные поверья" title="Запретные поверья">✦</button>
+                </div>
+                <p class="map-bottom-text">Нажмите на светящуюся точку, чтобы узнать тайну места.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="creature-modal" id="creatureModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">×</button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Дух русского фольклора">
+            </div>
+
+            <div class="modal-info">
+                <span class="section-label">Народные верования</span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalText"></p>
+
+                <div id="modalFeatures"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-overlay" id="bookOverlay">
+        <div class="book-window">
+            <button class="modal-close" id="closeBook">×</button>
+
+            <h2>Книга забытых преданий</h2>
+
+            <div class="ancient-book" id="flipBook" aria-live="polite"></div>
+
+            <div class="book-navigation">
+                <button id="prevPage">← Назад</button>
+
+                <span id="pageCounter"></span>
+
+                <button id="nextPage">Вперёд →</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="night-overlay" id="nightOverlay">
+        <div class="night-modal">
+            <button class="modal-close" id="closeNight">×</button>
+
+            <span class="section-label">Ночное предание</span>
+
+            <h2 id="nightTitle"></h2>
+
+            <p id="nightText"></p>
+        </div>
+    </div>
+
+    <div class="secret-overlay" id="secretOverlay">
+        <div class="secret-modal">
+            <button class="modal-close" id="secretClose">×</button>
+
+            <span class="section-label">За древними воротами</span>
+
+            <h2 id="secretTitle"></h2>
+
+            <p id="secretText"></p>
+
+            <button class="main-button" id="secretAgain">
+                Услышать другое предание
+            </button>
+        </div>
+    </div>
+
+    <div class="archive-overlay" id="archiveOverlay">
+        <div class="archive-modal">
+            <button class="modal-close" id="archiveClose">×</button>
+
+            <span class="section-label">Древний архив</span>
+
+            <h2 id="archiveTitle"></h2>
+
+            <p id="archiveText"></p>
+
+            <div class="archive-puzzle" id="archivePuzzle" hidden>
+                <h3>Старинная загадка</h3>
+
+                <p>
+                    Без рук, без ног,
+                    а ворота открывает.
+                    Что это?
+                </p>
+
+                <input
+                    type="text"
+                    id="archiveAnswer"
+                    placeholder="Ваш ответ"
+                >
+
+                <button class="main-button" id="archiveUnlock">
+                    Проверить ответ
+                </button>
+
+                <p id="archiveResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-overlay" id="mapOverlay">
+        <div class="map-modal">
+            <button class="modal-close" id="mapClose">×</button>
+
+            <span class="section-label">Тайны древнего леса</span>
+
+            <h2 id="mapTitle"></h2>
+
+            <p class="map-region" id="mapRegion"></p>
+
+            <p class="map-story" id="mapStory"></p>
+
+            <p class="map-disclaimer">
+                Перед вами художественный мир, вдохновлённый народными преданиями.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>✧ За гранью сказаний</p>
+        <p>Шёпот древнего леса — мир русского фольклора</p>
+        <a href="index.html">Вернуться к выбору миров</a>
+    </footer>
+
+    <button id="soundToggle" class="sound-toggle">
+        🔇 Звук выключен
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="russian.js"></script>
+
+</body>
+</html>

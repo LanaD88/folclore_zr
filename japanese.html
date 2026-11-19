@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#100b0e">
+    <meta name="description" content="Японский фольклор: ёкаи, древние легенды, ночные истории и загадки.">
+    <title>Японский фольклор | За гранью сказаний</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="japanese.css">
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+    <script src="japanese.js" defer></script>
+</head>
+<body>
+
+    <div class="site-background" aria-hidden="true"></div>
+    <div class="mist mist-one" aria-hidden="true"></div>
+    <div class="mist mist-two" aria-hidden="true"></div>
+    <div class="falling-petals" id="fallingPetals" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar" aria-label="Главная навигация">
+            <a href="#home" class="logo">
+                <span class="logo-symbol">⛩</span>
+                <span>За гранью сказаний</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Главная</a>
+                <a href="#creatures">Ёкаи</a>
+                <a href="#legends">Легенды</a>
+                <a href="#night">Ночные истории</a>
+                <a href="#beliefs">Поверья</a>
+                <a href="#temple">Тайный храм</a>
+                <a href="#archive">Архив</a>
+                <a href="#guardian">Испытание</a>
+                <a href="#map">Карта</a>
+            </div>
+
+            <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">
+                🔇 Звук выключен
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-ornament">✦ ⛩ ✦</div>
+                <p class="hero-label">日本の伝説 · ЯПОНСКИЕ ПРЕДАНИЯ</p>
+
+                <h1>Мир ёкаев и древних духов</h1>
+
+                <p class="hero-subtitle">
+                    Там, где исчезает свет фонарей, пробуждаются забытые легенды.
+                </p>
+
+                <p class="hero-description">
+                    За красными воротами тории скрывается мир загадочных существ,
+                    древних поверий, мистических храмов и историй,
+                    которые передавались из поколения в поколение.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#creatures" class="btn btn-primary">Войти в мир легенд</a>
+                    <a href="#legends" class="btn btn-outline">Открыть книгу</a>
+                </div>
+
+                <div class="hero-japanese">妖怪の世界</div>
+            </div>
+
+            <a href="#introduction" class="scroll-down" aria-label="Листать вниз">
+                <span>Исследовать</span>
+                <span class="scroll-arrow">↓</span>
+            </a>
+        </section>
+
+        <section class="introduction section" id="introduction">
+            <div class="container introduction-grid">
+                <div class="introduction-text">
+                    <p class="section-label">ПРИКОСНОВЕНИЕ К НЕИЗВЕДАННОМУ</p>
+                    <h2>Когда легенды оживают</h2>
+                    <div class="section-divider">✦</div>
+
+                    <p>
+                        Японский фольклор наполнен историями о духах,
+                        сверхъестественных существах и необычных событиях.
+                        Особое место в нём занимают ёкаи — загадочные
+                        создания, способные помогать людям, обманывать их
+                        или испытывать их смелость.
+                    </p>
+
+                    <p>
+                        Легенды о Кицунэ, Тэнгу и Они сохранились
+                        в сказаниях, театральных представлениях,
+                        произведениях искусства и современных историях.
+                    </p>
+
+                    <p>
+                        Откройте древнюю книгу, исследуйте тайные места
+                        и узнайте, какие истории скрывает ночная Япония.
+                    </p>
+                </div>
+
+                <div class="introduction-image image-frame">
+                    <img src="images/japanese-night1.png" alt="Древний японский храм среди тумана" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="creatures-section section" id="creatures">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">妖怪 · СВЕРХЪЕСТЕСТВЕННЫЕ СУЩЕСТВА</p>
+                    <h2>Бестиарий ёкаев</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Три загадочных существа, о которых рассказывают японские предания.</p>
+                </div>
+
+                <div class="creature-grid">
+                    <article class="creature-card">
+                        <div class="creature-image">
+                            <img src="images/kitsune.png" alt="Мистическая лиса Кицунэ" loading="lazy">
+                            <span class="creature-number">01</span>
+                        </div>
+                        <div class="creature-content">
+                            <span class="creature-japanese">狐</span>
+                            <h3>Кицунэ</h3>
+                            <p class="creature-type">Лиса-оборотень</p>
+                            <p>Хитрый и загадочный дух, способный принимать человеческий облик.</p>
+                            <button type="button" class="btn btn-card" data-creature="kitsune">
+                                Узнать легенду <span>→</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="creature-card">
+                        <div class="creature-image">
+                            <img src="images/oni.png" alt="Рогатый ёкай Они" loading="lazy">
+                            <span class="creature-number">02</span>
+                        </div>
+                        <div class="creature-content">
+                            <span class="creature-japanese">鬼</span>
+                            <h3>Они</h3>
+                            <p class="creature-type">Могущественный демон</p>
+                            <p>Грозное рогатое существо, известное своей огромной силой.</p>
+                            <button type="button" class="btn btn-card" data-creature="oni">
+                                Узнать легенду <span>→</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="creature-card">
+                        <div class="creature-image">
+                            <img src="images/tengu.png" alt="Горный ёкай Тэнгу" loading="lazy">
+                            <span class="creature-number">03</span>
+                        </div>
+                        <div class="creature-content">
+                            <span class="creature-japanese">天狗</span>
+                            <h3>Тэнгу</h3>
+                            <p class="creature-type">Горный дух</p>
+                            <p>Таинственный обитатель гор и лесов, связанный с ветром и боевыми искусствами.</p>
+                            <button type="button" class="btn btn-card" data-creature="tengu">
+                                Узнать легенду <span>→</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="legends-section section" id="legends">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">古い物語 · ДРЕВНИЕ СКАЗАНИЯ</p>
+                    <h2>Книга японских легенд</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Откройте старинную книгу и отправьтесь в путешествие по страницам народной сказки.</p>
+                </div>
+
+                <div class="legend-showcase">
+                    <div class="legend-image image-frame">
+                        <img src="images/chapter1.png" alt="Волшебный персик из сказки Момотаро" loading="lazy">
+                    </div>
+
+                    <div class="legend-description">
+                        <span class="legend-label">ЯПОНСКАЯ НАРОДНАЯ СКАЗКА</span>
+                        <h3>Момотаро</h3>
+                        <p class="legend-japanese">桃太郎</p>
+
+                        <p>
+                            Давным-давно старушка нашла в реке огромный персик.
+                            Из него появился необычный мальчик, которому было
+                            суждено стать героем.
+                        </p>
+
+                        <p>
+                            Вместе с верными спутниками Момотаро отправляется
+                            в опасное путешествие к острову Они.
+                        </p>
+
+                        <div class="legend-details">
+                            <span>✦ 5 глав</span>
+                            <span>✦ Иллюстрации</span>
+                            <span>✦ Перелистывание страниц</span>
+                        </div>
+
+                        <button class="btn btn-primary" id="openBook" type="button">
+                            📖 Открыть книгу
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="night-section section" id="night">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">夜の物語 · ИСТОРИИ ПОСЛЕ ЗАКАТА</p>
+                    <h2>Ночные истории</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Три мистических рассказа, вдохновлённых атмосферой японского фольклора.</p>
+                </div>
+
+                <div class="night-grid">
+                    <article class="night-card">
+                        <div class="night-image">
+                            <img src="images/japanese-night1.png" alt="Заброшенный японский храм ночью" loading="lazy">
+                        </div>
+                        <div class="night-content">
+                            <span class="night-number">ИСТОРИЯ 01</span>
+                            <h3>Заброшенный храм</h3>
+                            <p>Каждую полночь в пустом храме загорается фонарь, хотя туда никто не входит.</p>
+                            <button class="text-button" type="button" data-night="temple">
+                                Читать историю →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="night-card">
+                        <div class="night-image">
+                            <img src="images/japanese-night2.png" alt="Туманная тропа с японскими фонарями" loading="lazy">
+                        </div>
+                        <div class="night-content">
+                            <span class="night-number">ИСТОРИЯ 02</span>
+                            <h3>Тропа духов</h3>
+                            <p>В бамбуковом лесу появляется дорога, которую можно увидеть только ночью.</p>
+                            <button class="text-button" type="button" data-night="path">
+                                Читать историю →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="night-card">
+                        <div class="night-image">
+                            <img src="images/japanese-night3.png" alt="Старинный японский колодец в лунном свете" loading="lazy">
+                        </div>
+                        <div class="night-content">
+                            <span class="night-number">ИСТОРИЯ 03</span>
+                            <h3>Колодец духов</h3>
+                            <p>Из глубины старого колодца доносится голос, повторяющий имена прохожих.</p>
+                            <button class="text-button" type="button" data-night="well">
+                                Читать историю →
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="beliefs-section section" id="beliefs">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">言い伝え · НАРОДНЫЕ ПОВЕРЬЯ</p>
+                    <h2>Тайны и поверья Японии</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Нажмите на карточку, чтобы раскрыть историю или значение обычая.</p>
+                </div>
+
+                <div class="beliefs-grid">
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">⛩</div>
+                        <span class="belief-number">01</span>
+                        <h3>Ворота тории</h3>
+                        <p class="belief-preview">Что означают красные ворота у японских святилищ?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Тории обозначают переход к священному пространству
+                                синтоистского святилища. Их часто устанавливают
+                                у входа на территорию храма.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">🦊</div>
+                        <span class="belief-number">02</span>
+                        <h3>Лисы Инари</h3>
+                        <p class="belief-preview">Почему у некоторых храмов стоят каменные лисы?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Лисы считаются посланниками божества Инари.
+                                Их статуи можно увидеть возле многих святилищ,
+                                посвящённых Инари.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">🎐</div>
+                        <span class="belief-number">03</span>
+                        <h3>Звон колокольчиков</h3>
+                        <p class="belief-preview">Почему в Японии любят подвешивать колокольчики?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Летние колокольчики фурин ценят за нежное звучание,
+                                которое ассоциируется с прохладой.
+                                В разных традициях звону также приписывали
+                                защитное или очищающее значение.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">📜</div>
+                        <span class="belief-number">04</span>
+                        <h3>Бумажные обереги</h3>
+                        <p class="belief-preview">Для чего используют японские талисманы?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Офуда и омамори — предметы, связанные с религиозными
+                                традициями Японии. Их используют как обереги
+                                и символы благопожеланий.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">👹</div>
+                        <span class="belief-number">05</span>
+                        <h3>Изгнание Они</h3>
+                        <p class="belief-preview">Зачем на празднике Сэцубун бросают бобы?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Во время Сэцубун существует обычай мамэмаки:
+                                люди бросают жареные соевые бобы, символически
+                                прогоняя несчастья и приглашая удачу.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+
+                    <article class="belief-card" tabindex="0" role="button" aria-expanded="false">
+                        <div class="belief-icon">🌸</div>
+                        <span class="belief-number">06</span>
+                        <h3>Цветение сакуры</h3>
+                        <p class="belief-preview">Почему цветы сакуры так важны в японской культуре?</p>
+                        <div class="belief-hidden">
+                            <p>
+                                Короткое цветение сакуры часто воспринимают
+                                как символ красоты и быстротечности жизни.
+                                Любование цветами называют ханами.
+                            </p>
+                        </div>
+                        <span class="belief-more">Раскрыть тайну +</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="temple-section section" id="temple">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">秘密の神殿 · ЗАПРЕТНЫЕ ТАЙНЫ</p>
+                    <h2>Тайный храм</h2>
+                    <div class="section-divider">✦</div>
+                    <p>За древними дверями скрываются истории, которые не рассказывают при свете дня.</p>
+                </div>
+
+                <div class="secret-temple">
+                    <div class="temple-door-wrapper">
+                        <button class="temple-door" id="secretDoor" type="button" aria-label="Открыть тайный храм">
+                            <img src="images/japanese-door.png" alt="Закрытые двери таинственного японского храма" loading="lazy">
+                            <span class="door-glow"></span>
+                            <span class="door-message">Нажмите, чтобы открыть</span>
+                        </button>
+                    </div>
+
+                    <div class="temple-information">
+                        <span class="temple-symbol">✦</span>
+                        <h3>Осмелитесь войти?</h3>
+                        <p>
+                            Древняя дверь откроет одно из забытых сказаний.
+                            Каждый раз за ней может скрываться новая история.
+                        </p>
+                        <p class="temple-warning">
+                            Вымышленные мистические истории, вдохновлённые японскими легендами.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="archive-section section" id="archive">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">古代の宝物 · ЗАБЫТЫЕ СОКРОВИЩА</p>
+                    <h2>Архив древних артефактов</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Изучите предметы, связанные с легендами и традициями Японии.</p>
+                </div>
+
+                <div class="archive-grid">
+                    <article class="archive-card">
+                        <div class="archive-image">
+                            <img src="images/japanese-scroll.png" alt="Старинный японский свиток" loading="lazy">
+                        </div>
+                        <div class="archive-content">
+                            <span>АРТЕФАКТ 01</span>
+                            <h3>Древний свиток</h3>
+                            <p>На пожелтевшей бумаге сохранились строки забытого предания.</p>
+                            <button class="btn btn-card" type="button" data-archive="scroll">
+                                Исследовать →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="archive-card">
+                        <div class="archive-image">
+                            <img src="images/japanese-mask.png" alt="Японская маска Кицунэ" loading="lazy">
+                        </div>
+                        <div class="archive-content">
+                            <span>АРТЕФАКТ 02</span>
+                            <h3>Маска Кицунэ</h3>
+                            <p>Таинственная лисья маска, напоминающая о легендах об оборотнях.</p>
+                            <button class="btn btn-card" type="button" data-archive="mask">
+                                Исследовать →
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="archive-card">
+                        <div class="archive-image">
+                            <img src="images/japanese-mirror.png" alt="Древнее японское бронзовое зеркало" loading="lazy">
+                        </div>
+                        <div class="archive-content">
+                            <span>АРТЕФАКТ 03</span>
+                            <h3>Священное зеркало</h3>
+                            <p>Зеркало, напоминающее о Ята-но Кагами и древних мифах.</p>
+                            <button class="btn btn-card" type="button" data-archive="mirror">
+                                Исследовать →
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="riddle-section section" id="riddle">
+            <div class="container">
+                <div class="riddle-panel">
+                    <span class="riddle-symbol">✧</span>
+                    <p class="section-label">謎 · ПРОВЕРКА СМЕКАЛКИ</p>
+                    <h2>Загадка хранителя</h2>
+                    <p class="riddle-question">
+                        Без крыльев летит, без голоса поёт,
+                        среди деревьев невидимо живёт. Что это?
+                    </p>
+
+                    <div class="riddle-form">
+                        <label for="riddleAnswer" class="visually-hidden">Ваш ответ</label>
+                        <input id="riddleAnswer" type="text" placeholder="Ваш ответ" autocomplete="off">
+                        <button class="btn btn-primary" id="checkRiddle" type="button">
+                            Проверить ответ
+                        </button>
+                    </div>
+
+                    <p id="riddleResult" class="riddle-result" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guardian-section section" id="guardian">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">守護者の試練 · ПРОВЕРКА ЗНАНИЙ</p>
+                    <h2>Испытание хранителя</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Ответьте на пять вопросов о японском фольклоре и получите звание хранителя легенд.</p>
+                </div>
+
+                <div class="guardian-panel">
+                    <div id="guardianStart" class="guardian-start">
+                        <div class="guardian-emblem">⛩</div>
+                        <h3>Готовы пройти испытание?</h3>
+                        <p>
+                            Вас ждут пять вопросов о ёкаях, древних поверьях
+                            и японских традициях.
+                        </p>
+                        <button class="btn btn-primary" id="startGuardian" type="button">
+                            Начать испытание
+                        </button>
+                    </div>
+
+                    <div id="guardianQuiz" class="guardian-quiz" hidden>
+                        <div class="quiz-top">
+                            <span id="guardianProgress">Вопрос 1 из 5</span>
+                            <div class="quiz-progress-bar">
+                                <div class="quiz-progress-fill" id="guardianProgressFill"></div>
+                            </div>
+                        </div>
+
+                        <h3 id="guardianQuestion"></h3>
+
+                        <div class="guardian-answers" id="guardianAnswers"></div>
+
+                        <p class="guardian-feedback" id="guardianFeedback" aria-live="polite"></p>
+
+                        <button class="btn btn-primary" id="guardianNext" type="button" hidden>
+                            Следующий вопрос
+                        </button>
+                    </div>
+
+                    <div id="guardianFinish" class="guardian-finish" hidden>
+                        <div class="guardian-emblem">✦</div>
+                        <h3 id="guardianResultTitle">Испытание завершено</h3>
+                        <p id="guardianResultText"></p>
+                        <p id="guardianScore"></p>
+
+                        <div class="guardian-certificate" id="guardianCertificate">
+                            <div class="certificate-border">
+                                <span class="certificate-japanese">日本の伝説</span>
+                                <span class="certificate-symbol">⛩</span>
+                                <h3>Свидетельство хранителя</h3>
+                                <p>За знание японского фольклора присваивается звание</p>
+                                <strong id="certificateRank">Хранитель легенд</strong>
+                                <p id="certificateScore"></p>
+                                <span class="certificate-bottom">За гранью сказаний</span>
+                            </div>
+                        </div>
+
+                        <div class="guardian-finish-buttons">
+                            <button class="btn btn-primary" id="saveCertificate" type="button">
+                                Сохранить свидетельство
+                            </button>
+                            <button class="btn btn-outline" id="restartGuardian" type="button">
+                                Пройти ещё раз
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section section" id="map">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">神秘の地図 · ПУТЕШЕСТВИЕ ПО ЛЕГЕНДАМ</p>
+                    <h2>Карта мистической Японии</h2>
+                    <div class="section-divider">✦</div>
+                    <p>Откройте места, связанные с японскими преданиями и традициями.</p>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-introduction">
+                        <h3>Следы древних легенд</h3>
+                        <p>
+                            Каждая точка на карте рассказывает об особенном месте.
+                            Нажмите на название, чтобы узнать его историю.
+                        </p>
+                    </div>
+
+                    <div class="japan-map" id="japanMap">
+                        <div class="map-decor map-sun"></div>
+                        <div class="map-decor map-cloud cloud-one"></div>
+                        <div class="map-decor map-cloud cloud-two"></div>
+
+                        <div class="japan-islands">
+                            <svg viewBox="0 0 500 620" role="img" aria-label="Декоративная схема Японских островов">
+                                <path class="island" d="M337 45 C365 25 389 45 400 76 C415 106 395 137 370 154 C344 170 321 146 319 117 C316 87 319 63 337 45 Z"></path>
+                                <path class="island" d="M325 162 C341 176 343 194 334 218 C324 246 315 259 319 283 C326 313 309 329 290 349 C266 375 267 405 247 427 C222 452 197 470 170 489 C151 504 127 508 115 496 C105 484 116 468 134 456 C158 439 173 423 185 405 C199 386 221 375 237 356 C253 337 258 317 269 294 C281 271 277 252 289 231 C301 208 301 184 325 162 Z"></path>
+                                <path class="island" d="M160 506 C186 491 213 492 230 506 C237 513 225 524 209 530 C187 538 164 534 146 529 C134 525 142 515 160 506 Z"></path>
+                                <path class="island" d="M105 516 C125 505 146 514 146 531 C144 549 123 563 107 577 C90 592 72 591 64 577 C55 563 68 549 81 536 C90 527 95 521 105 516 Z"></path>
+                            </svg>
+                        </div>
+
+                        <button class="map-marker marker-hokkaido" type="button" data-place="hokkaido">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Хоккайдо</span>
+                        </button>
+
+                        <button class="map-marker marker-kyoto" type="button" data-place="kyoto">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Киото</span>
+                        </button>
+
+                        <button class="map-marker marker-tokyo" type="button" data-place="tokyo">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Токио</span>
+                        </button>
+
+                        <button class="map-marker marker-nara" type="button" data-place="nara">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Нара</span>
+                        </button>
+
+                        <button class="map-marker marker-kyushu" type="button" data-place="kyushu">
+                            <span class="marker-dot"></span>
+                            <span class="marker-label">Кюсю</span>
+                        </button>
+                    </div>
+
+                    <p class="map-note">
+                        Карта стилизована для оформления сайта и не предназначена для навигации.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ending-section section">
+            <div class="container ending-content">
+                <div class="ending-symbol">✦ ⛩ ✦</div>
+                <h2>Легенды никогда не исчезают</h2>
+                <p>
+                    Пока люди рассказывают истории, древние предания продолжают жить.
+                    Возможно, за следующими воротами скрывается новая тайна.
+                </p>
+                
+            <a href="#home" class="btn btn-outline">Вернуться к началу ↑</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>⛩ За гранью сказаний</h3>
+                <p>Путешествие в мир японского фольклора.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="#creatures">Ёкаи</a>
+                <a href="#legends">Книга легенд</a>
+                <a href="#archive">Архив</a>
+                <a href="#guardian">Испытание</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Японский фольклор · Мир ёкаев и древних духов</p>
+                <p>© 2026 За гранью сказаний</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="creatureModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-window creature-modal-window">
+            <button class="modal-close" id="closeModal" type="button" aria-label="Закрыть">×</button>
+
+            <div class="creature-modal-grid">
+                <div class="modal-image-wrapper">
+                    <img id="modalImage" src="" alt="">
+                </div>
+
+                <div class="modal-information">
+                    <p class="section-label">ЛЕГЕНДА О ЁКАЕ</p>
+                    <h2 id="modalTitle"></h2>
+                    <div class="section-divider">✦</div>
+                    <p id="modalText" class="modal-story"></p>
+                    <div id="modalFeatures" class="modal-features"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="book-overlay" id="bookOverlay" role="dialog" aria-modal="true" aria-labelledby="bookTitle">
+        <div class="book-window">
+            <button class="modal-close" id="closeBook" type="button" aria-label="Закрыть книгу">×</button>
+
+            <p class="section-label">桃太郎 · ЯПОНСКАЯ НАРОДНАЯ СКАЗКА</p>
+            <h2 id="bookTitle">Книга легенд: Момотаро</h2>
+
+            <div class="book-area">
+                <div class="ancient-book" id="flipBook" aria-label="Книга Момотаро"></div>
+            </div>
+
+            <div class="book-navigation">
+                <button id="prevPage" type="button">← Назад</button>
+                <span id="pageCounter" aria-live="polite">Обложка</span>
+                <button id="nextPage" type="button">Вперёд →</button>
+            </div>
+
+            <p class="book-hint">Нажимайте на стрелки или перелистывайте страницы мышью.</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="nightOverlay" role="dialog" aria-modal="true" aria-labelledby="nightTitle">
+        <div class="modal-window story-modal-window">
+            <button class="modal-close" id="closeNight" type="button" aria-label="Закрыть">×</button>
+
+            <div class="story-modal-heading">
+                <span>夜の物語</span>
+                <p class="section-label">НОЧНАЯ ИСТОРИЯ</p>
+                <h2 id="nightTitle"></h2>
+                <div class="section-divider">✦</div>
+            </div>
+
+            <div class="story-modal-body">
+                <p id="nightText"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="secretOverlay" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+        <div class="modal-window secret-modal-window">
+            <button class="modal-close" id="secretClose" type="button" aria-label="Закрыть">×</button>
+
+            <span class="secret-modal-symbol">⛩</span>
+            <p class="section-label">ТАЙНА ДРЕВНЕГО ХРАМА</p>
+            <h2 id="secretTitle"></h2>
+            <div class="section-divider">✦</div>
+            <p id="secretText"></p>
+
+            <button class="btn btn-primary" id="secretAgain" type="button">
+                Открыть другое сказание
+            </button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="archiveOverlay" role="dialog" aria-modal="true" aria-labelledby="archiveTitle">
+        <div class="modal-window archive-modal-window">
+            <button class="modal-close" id="archiveClose" type="button" aria-label="Закрыть">×</button>
+
+            <div class="archive-modal-heading">
+                <p class="section-label">АРХИВ ДРЕВНИХ АРТЕФАКТОВ</p>
+                <h2 id="archiveTitle"></h2>
+                <div class="section-divider">✦</div>
+            </div>
+
+            <p id="archiveText"></p>
+
+            <div id="archivePuzzle" class="archive-puzzle" hidden>
+                <h3>Загадка древнего свитка</h3>
+                <p>Не имеет крыльев, но летает. Не имеет уст, но шепчет. Что это?</p>
+
+                <label for="archiveAnswer" class="visually-hidden">Ответ на загадку</label>
+                <input type="text" id="archiveAnswer" placeholder="Введите ответ" autocomplete="off">
+
+                <button class="btn btn-primary" id="archiveUnlock" type="button">
+                    Открыть тайну
+                </button>
+
+                <p id="archiveResult" aria-live="polite"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="mapOverlay" role="dialog" aria-modal="true" aria-labelledby="mapTitle">
+        <div class="modal-window map-modal-window">
+            <button class="modal-close" id="mapClose" type="button" aria-label="Закрыть">×</button>
+
+            <p class="section-label">МИСТИЧЕСКАЯ КАРТА ЯПОНИИ</p>
+            <h2 id="mapTitle"></h2>
+            <p id="mapRegion" class="map-modal-region"></p>
+            <div class="section-divider">✦</div>
+            <p id="mapStory"></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#08150f">
+    <title>Кельтский фольклор | Земля преданий</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="celtic.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js" defer></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
+    <script src="celtic.js" defer></script>
+</head>
+
+<body>
+
+    <div class="forest-mist mist-one"></div>
+    <div class="forest-mist mist-two"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="site-logo">
+            <span class="logo-symbol">☘</span>
+            <span>Земля преданий</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mainNavigation"
+        >
+            ☰
+        </button>
+
+        <nav class="main-navigation" id="mainNavigation">
+            <a href="#home">Главная</a>
+            <a href="#creatures">Существа</a>
+            <a href="#legends">Книга</a>
+            <a href="#night">Предания</a>
+            <a href="#portal">Портал</a>
+            <a href="#artifacts">Артефакты</a>
+            <a href="#druid">Испытание</a>
+            <a href="#map">Карта</a>
+        </nav>
+
+        <button
+            class="sound-toggle"
+            id="soundToggle"
+            type="button"
+            aria-label="Включить звуки"
+            aria-pressed="false"
+        >
+            🔇
+        </button>
+    </header>
+
+    <main>
+
+        <section class="hero section" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <span class="section-eyebrow">
+                    Древние тайны Ирландии и Британии
+                </span>
+
+                <h1>Кельтский фольклор</h1>
+
+                <div class="ornament">
+                    <span></span>
+                    ☘
+                    <span></span>
+                </div>
+
+                <p class="hero-description">
+                    Там, где древние леса скрыты туманом,
+                    камни помнят голоса друидов,
+                    а за пределами человеческого мира
+                    продолжают жить легенды.
+                </p>
+
+                <a href="#creatures" class="gold-button">
+                    Войти в мир легенд
+                </a>
+            </div>
+
+            <div class="scroll-hint">
+                Листайте вниз
+                <span>↓</span>
+            </div>
+        </section>
+
+        <section class="section creatures-section" id="creatures">
+            <div class="section-heading">
+                <span class="section-eyebrow">Обитатели древних преданий</span>
+                <h2>Мифические существа</h2>
+                <p>
+                    Среди туманных озёр и зачарованных лесов
+                    скрываются существа, о которых рассказывают
+                    старинные кельтские легенды.
+                </p>
+            </div>
+
+            <div class="creatures-grid">
+
+                <button
+                    class="creature-card"
+                    type="button"
+                    data-creature="banshee"
+                >
+                    <div class="card-image">
+                        <img
+                            src="images/banshee.png"
+                            alt="Банши"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-category">Ирландские предания</span>
+                        <h3>Банши</h3>
+                        <p>Таинственная предвестница судьбы</p>
+                        <span class="card-link">Узнать легенду →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="creature-card"
+                    type="button"
+                    data-creature="leprechaun"
+                >
+                    <div class="card-image">
+                        <img
+                            src="images/leprechaun.png"
+                            alt="Лепрекон"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-category">Ирландские предания</span>
+                        <h3>Лепрекон</h3>
+                        <p>Хитрый хранитель спрятанных сокровищ</p>
+                        <span class="card-link">Узнать легенду →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="creature-card"
+                    type="button"
+                    data-creature="kelpie"
+                >
+                    <div class="card-image">
+                        <img
+                            src="images/kelpie.png"
+                            alt="Келпи"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-category">Шотландские предания</span>
+                        <h3>Келпи</h3>
+                        <p>Загадочный дух тёмных вод</p>
+                        <span class="card-link">Узнать легенду →</span>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="section legends-section" id="legends">
+            <div class="section-heading">
+                <span class="section-eyebrow">Старинная ирландская легенда</span>
+                <h2>Книга легенд</h2>
+                <p>
+                    Откройте древнюю книгу и прочитайте
+                    печальную историю четырёх детей короля Лира.
+                </p>
+            </div>
+
+            <div class="book-preview">
+                <div class="book-decoration">✦</div>
+
+                <button
+                    class="closed-book"
+                    id="openBook"
+                    type="button"
+                    aria-label="Открыть книгу легенд"
+                >
+                    <span class="book-cover-ornament">☘</span>
+                    <span class="book-cover-small">Кельтские легенды</span>
+                    <span class="book-cover-title">Дети Лира</span>
+                    <span class="book-cover-symbol">✧</span>
+                    <span class="book-cover-bottom">Древняя Ирландия</span>
+                </button>
+
+                <p class="book-instruction">
+                    Нажмите на книгу, чтобы открыть её
+                </p>
+            </div>
+        </section>
+
+        <section class="section night-section" id="night">
+            <div class="section-heading">
+                <span class="section-eyebrow">Когда опускается туман</span>
+                <h2>Ночные предания</h2>
+                <p>
+                    Три загадочные истории, которые оживают
+                    после захода солнца.
+                </p>
+            </div>
+
+            <div class="night-grid">
+
+                <button
+                    class="night-card"
+                    type="button"
+                    data-night="village"
+                >
+                    <img
+                        src="images/celticnight1.png"
+                        alt="Деревня в тумане"
+                        loading="lazy"
+                    >
+
+                    <div class="night-card-content">
+                        <span>Предание I</span>
+                        <h3>Деревня, исчезнувшая в тумане</h3>
+                        <p>У некоторых дорог нет обратного пути...</p>
+                        <span class="card-link">Читать историю →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="night-card"
+                    type="button"
+                    data-night="castle"
+                >
+                    <img
+                        src="images/celticnight2.png"
+                        alt="Древний замок"
+                        loading="lazy"
+                    >
+
+                    <div class="night-card-content">
+                        <span>Предание II</span>
+                        <h3>Последний гость замка</h3>
+                        <p>Не все хозяева покидают свои владения...</p>
+                        <span class="card-link">Читать историю →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="night-card"
+                    type="button"
+                    data-night="fairies"
+                >
+                    <img
+                        src="images/celticnight3.png"
+                        alt="Волшебный круг фей"
+                        loading="lazy"
+                    >
+
+                    <div class="night-card-content">
+                        <span>Предание III</span>
+                        <h3>Круг фей</h3>
+                        <p>Одна ночь может длиться целую вечность...</p>
+                        <span class="card-link">Читать историю →</span>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="section portal-section" id="portal">
+            <div class="section-heading">
+                <span class="section-eyebrow">Граница между мирами</span>
+                <h2>Тайный портал</h2>
+                <p>
+                    За древними дверями скрывается одна из тайн
+                    кельтского мира. Осмелитесь ли вы открыть их?
+                </p>
+            </div>
+
+            <div class="portal-container">
+                <button
+                    class="portal-door"
+                    id="secretDoor"
+                    type="button"
+                    aria-label="Открыть тайный портал"
+                >
+                    <img
+                        src="images/portal.png"
+                        alt="Таинственные древние двери"
+                        loading="lazy"
+                    >
+
+                    <span class="portal-glow"></span>
+                </button>
+
+                <p class="portal-instruction">
+                    Прикоснитесь к древним вратам
+                </p>
+            </div>
+        </section>
+
+        <section class="section artifacts-section" id="artifacts">
+            <div class="section-heading">
+                <span class="section-eyebrow">Сокровища древних преданий</span>
+                <h2>Древние артефакты</h2>
+                <p>
+                    Три легендарных предмета, связанных
+                    с мифами древней Ирландии.
+                </p>
+            </div>
+
+            <div class="artifacts-grid">
+
+                <button
+                    class="artifact-card"
+                    type="button"
+                    data-artifact="cauldron"
+                >
+                    <div class="artifact-image">
+                        <img
+                            src="images/cauldron.png"
+                            alt="Котёл Дагды"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="artifact-info">
+                        <span>Первое сокровище</span>
+                        <h3>Котёл Дагды</h3>
+                        <p>Сосуд неиссякаемого изобилия</p>
+                        <span class="card-link">Раскрыть тайну →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="artifact-card"
+                    type="button"
+                    data-artifact="stone"
+                >
+                    <div class="artifact-image">
+                        <img
+                            src="images/stone.png"
+                            alt="Камень Фаль"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="artifact-info">
+                        <span>Второе сокровище</span>
+                        <h3>Камень Фаль</h3>
+                        <p>Камень, признающий истинного короля</p>
+                        <span class="card-link">Раскрыть тайну →</span>
+                    </div>
+                </button>
+
+                <button
+                    class="artifact-card"
+                    type="button"
+                    data-artifact="spear"
+                >
+                    <div class="artifact-image">
+                        <img
+                            src="images/spear.png"
+                            alt="Копьё Луга"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="artifact-info">
+                        <span>Третье сокровище</span>
+                        <h3>Копьё Луга</h3>
+                        <p>Легендарное копьё великого героя</p>
+                        <span class="card-link">Раскрыть тайну →</span>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+        <section class="section druid-section" id="druid">
+            <div class="section-heading">
+                <span class="section-eyebrow">Проверьте свои знания</span>
+                <h2>Испытание друида</h2>
+                <p>
+                    Древние камни хранят знания прошлого.
+                    Ответьте на вопросы и получите своё звание.
+                </p>
+            </div>
+
+            <div class="druid-container">
+
+                <div class="druid-start" id="druidStart">
+                    <div class="druid-symbol">☘</div>
+
+                    <h3>Испытание древнего друида</h3>
+
+                    <p>
+                        Вас ждут пять вопросов о кельтских
+                        преданиях и их загадочных героях.
+                    </p>
+
+                    <button
+                        class="gold-button"
+                        id="startDruid"
+                        type="button"
+                    >
+                        Начать испытание
+                    </button>
+                </div>
+
+                <div class="druid-quiz" id="druidQuiz" hidden>
+                    <div class="quiz-top">
+                        <span id="druidProgress">Вопрос 1 из 5</span>
+                        <span id="druidScore">0 баллов</span>
+                    </div>
+
+                    <div class="quiz-progress">
+                        <div id="druidProgressFill"></div>
+                    </div>
+
+                    <h3 id="druidQuestion"></h3>
+
+                    <div
+                        class="quiz-answers"
+                        id="druidAnswers"
+                    ></div>
+
+                    <p
+                        class="quiz-feedback"
+                        id="druidFeedback"
+                        aria-live="polite"
+                    ></p>
+
+                    <button
+                        class="gold-button"
+                        id="druidNext"
+                        type="button"
+                        hidden
+                    >
+                        Следующий вопрос
+                    </button>
+                </div>
+
+                <div class="druid-finish" id="druidFinish" hidden>
+                    <div class="druid-symbol">✦</div>
+
+                    <h3 id="druidResultTitle"></h3>
+                    <p id="druidResultText"></p>
+                    <p id="druidFinalScore"></p>
+
+                    <div
+                        class="druid-certificate"
+                        id="druidCertificate"
+                    >
+                        <span>Земля преданий</span>
+                        <h3>Свидетельство друида</h3>
+                        <div class="certificate-symbol">☘</div>
+                        <h4 id="certificateRank"></h4>
+                        <p id="certificateScore"></p>
+                        <span>Кельтский фольклор</span>
+                    </div>
+
+                    <div class="certificate-actions">
+                        <button
+                            class="gold-button"
+                            id="saveCertificate"
+                            type="button"
+                        >
+                            Сохранить свидетельство
+                        </button>
+
+                        <button
+                            class="outline-button"
+                            id="restartDruid"
+                            type="button"
+                        >
+                            Пройти ещё раз
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section map-section" id="map">
+            <div class="section-heading">
+                <span class="section-eyebrow">Путешествие по древним землям</span>
+                <h2>Карта легенд</h2>
+                <p>
+                    Исследуйте мистические места Ирландии,
+                    Шотландии и Уэльса.
+                </p>
+            </div>
+
+            <div class="map-container">
+                <div class="map-frame">
+                    <img
+                        src="images/celticmap.png"
+                        alt="Старинная карта Ирландии и Великобритании"
+                        class="map-background"
+                        loading="lazy"
+                    >
+
+                    <button
+                        class="map-marker marker-tara"
+                        type="button"
+                        data-place="tara"
+                        aria-label="Холм Тара"
+                    >
+                        <span class="marker-dot"></span>
+                        <span class="marker-tooltip">Холм Тара</span>
+                    </button>
+
+                    <button
+                        class="map-marker marker-giants"
+                        type="button"
+                        data-place="giants"
+                        aria-label="Тропа великанов"
+                    >
+                        <span class="marker-dot"></span>
+                        <span class="marker-tooltip">Тропа великанов</span>
+                    </button>
+
+                    <button
+                        class="map-marker marker-ness"
+                        type="button"
+                        data-place="ness"
+                        aria-label="Лох-Несс"
+                    >
+                        <span class="marker-dot"></span>
+                        <span class="marker-tooltip">Лох-Несс</span>
+                    </button>
+
+                    <button
+                        class="map-marker marker-llyn"
+                        type="button"
+                        data-place="llyn"
+                        aria-label="Ллин-и-Ван-Вах"
+                    >
+                        <span class="marker-dot"></span>
+                        <span class="marker-tooltip">Ллин-и-Ван-Вах</span>
+                    </button>
+
+                    <button
+                        class="map-marker marker-newgrange"
+                        type="button"
+                        data-place="newgrange"
+                        aria-label="Ньюгрейндж"
+                    >
+                        <span class="marker-dot"></span>
+                        <span class="marker-tooltip">Ньюгрейндж</span>
+                    </button>
+                </div>
+
+                <p class="map-instruction">
+                    Нажмите на светящуюся точку, чтобы узнать легенду
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-symbol">☘</div>
+
+        <h2>Земля преданий</h2>
+
+        <p>
+            Там, где заканчивается история,
+            начинается легенда.
+        </p>
+
+        <a href="index.html">Вернуться на главную</a>
+
+        <span class="footer-bottom">
+            Кельтский фольклор · Мир древних легенд
+        </span>
+    </footer>
+
+    <div
+        class="modal-overlay"
+        id="creatureOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="creatureTitle"
+        hidden
+    >
+        <div class="modal-content creature-modal">
+            <button
+                class="modal-close"
+                id="closeCreature"
+                type="button"
+                aria-label="Закрыть"
+            >×</button>
+
+            <div class="creature-modal-image">
+                <img id="creatureImage" src="" alt="">
+            </div>
+
+            <div class="creature-modal-text">
+                <span class="modal-eyebrow">Мифическое существо</span>
+                <h2 id="creatureTitle"></h2>
+                <p id="creatureText"></p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal-overlay book-overlay"
+        id="bookOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Книга легенд"
+        hidden
+    >
+        <div class="book-modal-content">
+            <button
+                class="modal-close"
+                id="closeBook"
+                type="button"
+                aria-label="Закрыть книгу"
+            >×</button>
+
+            <div class="book-stage">
+                <div id="flipBook" class="ancient-book"></div>
+            </div>
+
+            <div class="book-controls">
+                <button
+                    class="outline-button"
+                    id="prevPage"
+                    type="button"
+                >
+                    ← Назад
+                </button>
+
+                <span id="pageCounter">Обложка</span>
+
+                <button
+                    class="outline-button"
+                    id="nextPage"
+                    type="button"
+                >
+                    Далее →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal-overlay"
+        id="nightOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="nightTitle"
+        hidden
+    >
+        <div class="modal-content story-modal">
+            <button
+                class="modal-close"
+                id="closeNight"
+                type="button"
+                aria-label="Закрыть"
+            >×</button>
+
+            <span class="modal-eyebrow">Ночное предание</span>
+            <h2 id="nightTitle"></h2>
+            <div id="nightText" class="story-text"></div>
+        </div>
+    </div>
+
+    <div
+        class="modal-overlay"
+        id="portalOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="portalTitle"
+        hidden
+    >
+        <div class="modal-content story-modal">
+            <button
+                class="modal-close"
+                id="closePortal"
+                type="button"
+                aria-label="Закрыть"
+            >×</button>
+
+            <span class="modal-eyebrow">Тайна другого мира</span>
+            <h2 id="portalTitle"></h2>
+            <div id="portalText" class="story-text"></div>
+
+            <button
+                class="gold-button"
+                id="portalAgain"
+                type="button"
+            >
+                Открыть другую тайну
+            </button>
+        </div>
+    </div>
+
+    <div
+        class="modal-overlay"
+        id="artifactOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="artifactTitle"
+        hidden
+    >
+        <div class="modal-content artifact-modal">
+            <button
+                class="modal-close"
+                id="closeArtifact"
+                type="button"
+                aria-label="Закрыть"
+            >×</button>
+
+            <div class="artifact-modal-image">
+                <img id="artifactImage" src="" alt="">
+            </div>
+
+            <div class="artifact-modal-text">
+                <span class="modal-eyebrow">Древний артефакт</span>
+                <h2 id="artifactTitle"></h2>
+                <p id="artifactText"></p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="modal-overlay"
+        id="mapOverlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mapTitle"
+        hidden
+    >
+        <div class="modal-content story-modal">
+            <button
+                class="modal-close"
+                id="closeMap"
+                type="button"
+                aria-label="Закрыть"
+            >×</button>
+
+            <span class="modal-eyebrow" id="mapRegion"></span>
+            <h2 id="mapTitle"></h2>
+            <div id="mapStory" class="story-text"></div>
+        </div>
+    </div>
+
+    <audio
+        id="forestAudio"
+        src="sounds/celtic/forest.mp3"
+        preload="none"
+        loop
+    ></audio>
+
+    <audio
+        id="pageAudio"
+        src="sounds/celtic/page.mp3"
+        preload="none"
+    ></audio>
+
+    <audio
+        id="portalAudio"
+        src="sounds/celtic/portal.mp3"
+        preload="none"
+    ></audio>
+
+    <audio
+        id="magicAudio"
+        src="sounds/celtic/magic.mp3"
+        preload="none"
+    ></audio>
+
+    <audio
+        id="nightAudio"
+        src="sounds/celtic/night.mp3"
+        preload="none"
+        loop
+    ></audio>
+
+    <audio
+        id="successAudio"
+        src="sounds/celtic/success.mp3"
+        preload="none"
+    ></audio>
+
+</body>
+</html>

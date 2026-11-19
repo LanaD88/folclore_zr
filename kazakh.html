@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Степь теней — За гранью сказаний</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">✧ За гранью сказаний</a>
+
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="index.html#worlds">Миры</a>
+            <a href="#creatures">Существа</a>
+            <a href="#stories">Предания</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="kazakh-hero">
+            <div class="hero-content">
+                <p class="subtitle">КАЗАХСКИЙ ФОЛЬКЛОР</p>
+                <h1>СТЕПЬ ТЕНЕЙ</h1>
+
+                <p class="description">
+                    Древние истории, которые хранит бескрайняя степь.
+                </p>
+
+                <a href="#creatures" class="main-button">
+                    Исследовать предания
+                </a>
+            </div>
+        </section>
+
+        <section class="kazakh-intro">
+            <p class="subtitle">НАСЛЕДИЕ ВЕЛИКОЙ СТЕПИ</p>
+            <h2>Там, где живут предания</h2>
+
+            <p>
+                Казахский фольклор хранит народные сказки,
+                героические эпосы, легенды и поверья.
+                В них встречаются мудрые герои,
+                загадочные существа и удивительные события.
+                Эти истории передавались из поколения в поколение.
+            </p>
+        </section>
+
+        <section class="creatures-section" id="creatures">
+            <p class="subtitle">БЕСТИАРИЙ</p>
+            <h2>Существа из преданий</h2>
+
+            <div class="creature-grid">
+
+                <article class="creature-card">
+                    <div class="creature-image zheztyrnak"></div>
+                    <h3>Жезтырнақ</h3>
+
+                    <p>
+                        Загадочное существо с металлическими
+                        когтями, встречающееся в народных преданиях.
+                    </p>
+
+                    <button class="creature-button" data-creature="zheztyrnak">
+                        Узнать историю
+                    </button>
+                </article>
+
+                <article class="creature-card">
+                    <div class="creature-image zhalmauyz"></div>
+                    <h3>Жалмауыз кемпір</h3>
+
+                    <p>
+                        Могущественная и опасная старуха,
+                        известная по казахским волшебным сказкам.
+                    </p>
+
+                    <button class="creature-button" data-creature="zhalmauyz">
+                        Узнать историю
+                    </button>
+                </article>
+
+                <article class="creature-card">
+                    <div class="creature-image albasty"></div>
+                    <h3>Албасты</h3>
+
+                    <p>
+                        Таинственный дух, образ которого
+                        встречается в казахских народных поверьях.
+                    </p>
+
+                    <button class="creature-button" data-creature="albasty">
+                        Узнать историю
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="stories-section" id="stories">
+            <p class="subtitle">УСТНОЕ НАСЛЕДИЕ</p>
+            <h2>Легенды и сказания</h2>
+
+            <div class="story-panel">
+                <h3>Ер Төстік</h3>
+
+                <p>
+                    История о смелом герое, волшебных помощниках
+                    и путешествии в подземный мир.
+                </p>
+
+                <button class="creature-button" id="openBook">
+                    Открыть книгу
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="night-section" id="night">
+    <p class="subtitle">ЗАБЫТЫЕ ИСТОРИИ</p>
+    <h2>Ночные предания</h2>
+    <p class="night-description">
+        Когда солнце скрывается за горизонтом,
+        степь начинает рассказывать свои тайны...
+    </p>
+
+    <div class="night-grid">
+        <article class="night-card">
+            <div class="night-image night-one"></div>
+            <h3>Голос в степи</h3>
+            <p>Не каждый голос, услышанный ночью, принадлежит человеку.</p>
+            <button class="night-button" data-night="voice">
+                Читать предание
+            </button>
+        </article>
+
+        <article class="night-card">
+            <div class="night-image night-two"></div>
+            <h3>Забытая юрта</h3>
+            <p>В безлюдной степи иногда загорается свет там, где никто не живёт.</p>
+            <button class="night-button" data-night="yurt">
+                Читать предание
+            </button>
+        </article>
+
+        <article class="night-card">
+            <div class="night-image night-three"></div>
+            <h3>Тень у колодца</h3>
+            <p>Говорят, ночью у старого колодца можно увидеть странную тень.</p>
+            <button class="night-button" data-night="shadow">
+                Читать предание
+            </button>
+        </article>
+    </div>
+</section>
+<section class="beliefs-section" id="beliefs">
+    <p class="subtitle">ТАЙНЫ ПРЕДКОВ</p>
+    <h2>Запретные поверья</h2>
+    <p class="beliefs-description">
+        В степи существовали запреты, передававшиеся из поколения в поколение.
+        За каждым из них скрывается своя история...
+    </p>
+
+    <div class="beliefs-grid">
+        <div class="belief-card">
+            <span class="belief-symbol">☾</span>
+            <h3>Не свисти в доме</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>В народе считалось, что свист в доме может отпугнуть достаток и благополучие.</p>
+                <p>Этот запрет также учил уважать спокойствие домашнего очага.</p>
+            </div>
+        </div>
+
+        <div class="belief-card">
+            <span class="belief-symbol">✦</span>
+            <h3>Не наступай на порог</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>Порог считался важной границей между домом и внешним миром.</p>
+                <p>Наступать или садиться на него было не принято из уважения к жилищу.</p>
+            </div>
+        </div>
+
+        <div class="belief-card">
+            <span class="belief-symbol">☽</span>
+            <h3>Не указывай на луну</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>В некоторых народных поверьях указывать пальцем на луну считалось неуважительным.</p>
+                <p>Луна занимала особое место в традиционных представлениях о природе и небесных светилах.</p>
+            </div>
+        </div>
+
+        <div class="belief-card">
+            <span class="belief-symbol">✧</span>
+            <h3>Не оставляй колыбель пустой</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>С колыбелью — бесік — связано множество традиционных поверий.</p>
+                <p>Считалось нежелательным раскачивать пустую колыбель. Этот обычай отражал особое отношение к ребёнку и его защите.</p>
+            </div>
+        </div>
+
+        <div class="belief-card">
+            <span class="belief-symbol">✺</span>
+            <h3>Не плюй в огонь</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>Огонь и домашний очаг традиционно связывались с жизнью и благополучием семьи.</p>
+                <p>Запрет выражал уважение к огню, который давал тепло и помогал людям выживать.</p>
+            </div>
+        </div>
+
+        <div class="belief-card">
+            <span class="belief-symbol">☼</span>
+            <h3>Не выходи ночью без нужды</h3>
+            <p class="belief-hint">Нажмите, чтобы раскрыть тайну</p>
+            <div class="belief-secret">
+                <p>Ночь в народных рассказах нередко связывали с неизвестностью и опасностью.</p>
+                <p>Подобные предостережения могли иметь и практический смысл: в темноте степь становилась опаснее для путника.</p>
+            </div>
+        </div>
+    </div>
+
+    <p class="beliefs-note">
+        Народные поверья отражают традиции и представления прошлого,
+        а не доказанные сверхъестественные явления.
+    </p>
+</section>
+
+<section class="secret-section" id="secret">
+    <p class="subtitle">ЗА ГРАНЬЮ СКАЗАНИЙ</p>
+    <h2>Тайная дверь</h2>
+    <p class="secret-description">
+        Некоторые истории лучше оставить забытыми.
+        Но если осмелитесь — откройте дверь...
+    </p>
+
+    <button class="secret-door" id="secretDoor" type="button" aria-label="Открыть тайную дверь">
+        <span class="door-glow"></span>
+        <span class="door-image"></span>
+    </button>
+
+    <p class="door-hint" id="doorHint">✦ Нажмите на дверь, чтобы узнать свою судьбу ✦</p>
+</section>
+
+<section class="archive-section" id="archive">
+    <p class="subtitle">ЗАПЕЧАТАННЫЕ ИСТОРИИ</p>
+    <h2>Архив проклятых легенд</h2>
+    <p class="archive-description">
+        Здесь хранятся истории, которые время
+        пыталось стереть из памяти...
+    </p>
+
+    <div class="archive-grid">
+        <article class="archive-card">
+            <img src="images/scroll.jpeg" alt="Древний свиток">
+            <h3>Забытый свиток</h3>
+            <p>История, найденная среди старых рукописей.</p>
+            <button class="archive-button" data-archive="scroll">
+                Развернуть свиток
+            </button>
+        </article>
+
+        <article class="archive-card">
+            <img src="images/locked.jpeg" alt="Запечатанная книга">
+            <h3>Запечатанная книга</h3>
+            <p>Только разгадка откроет её страницы.</p>
+            <button class="archive-button" data-archive="locked">
+                Разгадать тайну
+            </button>
+        </article>
+
+        <article class="archive-card">
+            <img src="images/archive.jpeg" alt="Тайная библиотека">
+            <h3>Последний хранитель</h3>
+            <p>У каждого архива есть свой хранитель.</p>
+            <button class="archive-button" data-archive="keeper">
+                Читать легенду
+            </button>
+        </article>
+    </div>
+</section>
+
+<div class="archive-overlay" id="archiveOverlay">
+    <div class="archive-modal">
+        <button class="archive-close" id="archiveClose"
+                type="button">×</button>
+
+        <p class="subtitle">ТАЙНЫЙ АРХИВ</p>
+        <h2 id="archiveTitle"></h2>
+        <p id="archiveText"></p>
+
+        <div id="archivePuzzle" class="archive-puzzle" hidden>
+            <p>Что принадлежит тебе, но другие
+               произносят чаще тебя?</p>
+
+            <input id="archiveAnswer" type="text"
+                   placeholder="Введите ответ">
+
+            <button id="archiveUnlock" class="archive-button">
+                Открыть печать
+            </button>
+
+            <p id="archiveResult" aria-live="polite"></p>
+        </div>
+    </div>
+</div>
+
+<section class="guardian-section" id="guardian">
+    <p class="subtitle">ПОСЛЕДНЕЕ ИСПЫТАНИЕ</p>
+    <h2>Испытание хранителя</h2>
+
+    <p class="guardian-description">
+        Древние знания открываются не каждому.
+        Ответьте на пять вопросов и узнайте,
+        достойны ли вы стать хранителем преданий.
+    </p>
+
+    <div class="guardian-box" id="guardianBox">
+        <div id="guardianStart">
+            <div class="guardian-symbol">✧</div>
+            <h3>Готовы пройти испытание?</h3>
+            <p>Вас ждут пять вопросов о тайнах Великой степи.</p>
+
+            <button class="guardian-button" id="startGuardian">
+                Начать испытание
+            </button>
+        </div>
+
+        <div id="guardianQuiz" hidden>
+            <p class="guardian-progress" id="guardianProgress"></p>
+            <h3 id="guardianQuestion"></h3>
+            <div class="guardian-answers" id="guardianAnswers"></div>
+            <p class="guardian-feedback" id="guardianFeedback"></p>
+
+            <button class="guardian-button" id="guardianNext" hidden>
+                Следующий вопрос
+            </button>
+        </div>
+
+        <div id="guardianFinish" hidden>
+            <div class="guardian-symbol">✦</div>
+            <h3 id="guardianResultTitle"></h3>
+            <p id="guardianResultText"></p>
+            <p id="guardianScore"></p>
+<div class="guardian-certificate" id="guardianCertificate">
+    <div class="certificate-ornament">✦ ☾ ✦</div>
+
+    <p class="certificate-label">АРХИВ ВЕЛИКОЙ СТЕПИ</p>
+
+    <h3>Свидетельство хранителя</h3>
+
+    <p class="certificate-description">
+        За прохождение испытания
+        и познание древних преданий
+        присваивается звание
+    </p>
+
+    <h2 id="certificateRank"></h2>
+
+    <p class="certificate-score" id="certificateScore"></p>
+
+    <div class="certificate-ornament">✧ ❖ ✧</div>
+
+    <p class="certificate-footer">
+        СТЕПЬ ТЕНЕЙ — ЗА ГРАНЬЮ СКАЗАНИЙ
+    </p>
+</div>
+
+<button class="guardian-button" id="saveCertificate">
+    ↓ Сохранить награду
+</button>
+            <button class="guardian-button" id="restartGuardian">
+                Пройти ещё раз
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="mystic-map-section" id="mysticMap">
+    <p class="subtitle">ЗАБЫТЫЕ УГОЛКИ ВЕЛИКОЙ СТЕПИ</p>
+    <h2>Карта мистических мест</h2>
+    <p class="mystic-map-description">
+        Шесть мест. Шесть загадочных историй.
+        Выберите отметку и раскройте тайну.
+    </p>
+
+    <div class="mystic-map">
+        <div class="map-compass">✧<span>С</span></div>
+
+        <div class="map-land">
+            <span class="map-decoration">☾</span>
+            <span class="map-caption">ВЕЛИКАЯ СТЕПЬ</span>
+
+            <button class="map-pin pin-burabay"
+                    data-place="burabay" type="button">
+                ✦ <span>Бурабай</span>
+            </button>
+
+            <button class="map-pin pin-bayanaul"
+                    data-place="bayanaul" type="button">
+                ✦ <span>Баянауыл</span>
+            </button>
+
+            <button class="map-pin pin-altynemel"
+                    data-place="altynemel" type="button">
+                ✦ <span>Алтынемель</span>
+            </button>
+
+            <button class="map-pin pin-tamgaly"
+                    data-place="tamgaly" type="button">
+                ✦ <span>Тамгалы</span>
+            </button>
+
+            <button class="map-pin pin-ulytau"
+                    data-place="ulytau" type="button">
+                ✦ <span>Улытау</span>
+            </button>
+
+            <button class="map-pin pin-aral"
+                    data-place="aral" type="button">
+                ✦ <span>Арал</span>
+            </button>
+        </div>
+
+        <p class="map-bottom-text">
+            ✧ Каждое место хранит свою историю ✧
+        </p>
+    </div>
+</section>
+
+<div class="map-overlay" id="mapOverlay">
+    <div class="map-modal">
+        <button class="map-close" id="mapClose"
+                type="button" aria-label="Закрыть">×</button>
+
+        <p class="subtitle">ТАЙНЫ ВЕЛИКОЙ СТЕПИ</p>
+        <h2 id="mapTitle"></h2>
+        <p class="map-region" id="mapRegion"></p>
+        <p class="map-story" id="mapStory"></p>
+
+        <p class="map-disclaimer">
+            Художественная история, вдохновлённая атмосферой места.
+        </p>
+    </div>
+</div>
+<div class="secret-overlay" id="secretOverlay">
+    <div class="secret-modal">
+        <button class="secret-close" id="secretClose" type="button">×</button>
+        <p class="subtitle">ЗАБЫТОЕ ПРЕДАНИЕ</p>
+        <h2 id="secretTitle"></h2>
+        <p id="secretText"></p>
+        <button class="secret-again" id="secretAgain" type="button">
+            Открыть другую тайну
+        </button>
+    </div>
+</div>
+
+    <div class="book-overlay" id="bookOverlay">
+        <div class="book-window">
+
+            <button class="book-close" id="closeBook">×</button>
+
+            <p class="subtitle">ЛЕГЕНДЫ ВЕЛИКОЙ СТЕПИ</p>
+            <h2>Ер Төстік</h2>
+
+            <div class="ancient-book" id="flipBook"></div>
+
+            <div class="book-navigation">
+                <button id="prevPage">← Назад</button>
+                <span id="pageCounter">1 / 12</span>
+                <button id="nextPage">Далее →</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="creature-modal" id="creatureModal">
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal">×</button>
+
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="modal-info">
+                <p class="subtitle">АРХИВ ТЁМНЫХ ПРЕДАНИЙ</p>
+
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+
+                <h3>Особенности</h3>
+                <p id="modalFeatures"></p>
+
+                <p class="modal-warning">
+                    ✧ Легенды Великой степи ✧
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="night-overlay" id="nightOverlay">
+    <div class="night-modal">
+        <button class="night-close" id="closeNight">×</button>
+        <p class="subtitle">НОЧНЫЕ ПРЕДАНИЯ</p>
+        <h2 id="nightTitle"></h2>
+        <p id="nightText"></p>
+        <p class="night-end">✧ Не все тайны раскрываются с рассветом ✧</p>
+    </div>
+</div>
+    <footer>
+        <p>© 2026 За гранью сказаний</p>
+    </footer>
+
+    <button id="soundToggle" class="sound-toggle" type="button">
+    🔇 Звук выключен
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
