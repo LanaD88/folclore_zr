@@ -2746,3 +2746,201 @@ button:disabled {
     }
 }
 
+#temple .secret-temple {
+    display: grid !important;
+    grid-template-columns: minmax(0, 400px) minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 65px !important;
+    width: 100% !important;
+    max-width: 1050px !important;
+    margin: 50px auto !important;
+}
+
+#temple .temple-door-wrapper {
+    display: flex !important;
+    position: relative !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    perspective: 1400px;
+}
+
+#secretDoor.temple-door {
+    display: flex !important;
+    position: relative !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    aspect-ratio: 3 / 4 !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    border: 8px solid #382017 !important;
+    border-radius: 4px !important;
+    background: #100806 !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    perspective: 1400px !important;
+    transform: none !important;
+    cursor: pointer;
+}
+
+#secretDoor::before,
+#secretDoor::after {
+    display: none !important;
+    content: none !important;
+}
+
+#secretDoor .temple-door-left,
+#secretDoor .temple-door-right {
+    position: relative !important;
+    display: block !important;
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    background-image: url("images/doorjapa.png") !important;
+    background-size: 200% 100% !important;
+    background-repeat: no-repeat !important;
+    border: none !important;
+    border-radius: 0 !important;
+    backface-visibility: hidden;
+    transition: transform 1.7s ease-in-out !important;
+    z-index: 2;
+}
+
+#secretDoor .temple-door-left {
+    background-position: left center !important;
+    transform-origin: left center !important;
+}
+
+#secretDoor .temple-door-right {
+    background-position: right center !important;
+    transform-origin: right center !important;
+}
+
+#secretDoor.opening .temple-door-left {
+    transform: rotateY(-110deg) !important;
+}
+
+#secretDoor.opening .temple-door-right {
+    transform: rotateY(110deg) !important;
+}
+
+#secretDoor .door-glow {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 183, 77, 0.85),
+        rgba(135, 43, 17, 0.55) 45%,
+        #100806 85%
+    ) !important;
+    opacity: 0 !important;
+    transition: opacity 1.3s ease !important;
+}
+
+#secretDoor.opening .door-glow {
+    opacity: 1 !important;
+}
+
+#secretDoor .door-message {
+    position: absolute !important;
+    left: 50% !important;
+    bottom: 15px !important;
+    z-index: 4 !important;
+    transform: translateX(-50%) !important;
+    padding: 9px 16px !important;
+    border-radius: 20px !important;
+    background: rgba(20, 8, 5, 0.78) !important;
+    color: #f5d7a5 !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    pointer-events: none !important;
+    transition: opacity 0.4s ease !important;
+}
+
+#secretDoor.opening .door-message {
+    opacity: 0 !important;
+}
+
+#temple .temple-information {
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 500px !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+#temple {
+    scroll-margin-top: 110px;
+}
+
+@media (max-width: 800px) {
+    #temple .secret-temple {
+        grid-template-columns: minmax(0, 1fr) !important;
+        max-width: 400px !important;
+        gap: 35px !important;
+    }
+
+    #secretDoor.temple-door {
+        width: min(100%, 340px) !important;
+    }
+
+    #temple .temple-information {
+        text-align: center !important;
+    }
+}
+#temple .secret-temple {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 40px auto !important;
+    gap: 35px !important;
+}
+
+#temple .temple-door-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+}
+
+#secretDoor.temple-door {
+    width: min(380px, 85vw) !important;
+    max-width: 380px !important;
+    height: auto !important;
+    aspect-ratio: 3 / 4 !important;
+    margin: 0 auto !important;
+}
+
+#temple .temple-information {
+    width: 100% !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+#temple .section-heading {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#temple {
+    scroll-margin-top: 120px;
+}
+
+

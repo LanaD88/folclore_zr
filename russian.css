@@ -429,7 +429,7 @@ p {
     display: block;
     position: absolute;
     inset: 0;
-    background: url("images/russian-door.png") center / cover no-repeat;
+    background: url("images/doorrus.png") center / cover no-repeat;
     transform-origin: left center;
     transition: transform 1.3s ease;
 }
@@ -1520,5 +1520,93 @@ p {
 
     .book-navigation button {
         padding: 10px 12px;
+    }
+}
+
+.forest-ending {
+    position: relative;
+    min-height: 420px;
+    padding: 95px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(143, 177, 130, 0.25);
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(57, 104, 70, 0.25),
+            transparent 70%
+        ),
+        linear-gradient(180deg, #0b1510, #14271c 55%, #080f0b);
+    text-align: center;
+}
+
+.forest-ending-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.forest-ending-symbol {
+    margin-bottom: 25px;
+    color: #a6c99a;
+    font-size: 28px;
+    letter-spacing: 12px;
+}
+
+.forest-ending h2 {
+    margin: 0 0 22px;
+    color: #d5e8ca;
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.forest-ending p {
+    max-width: 580px;
+    margin: 0 auto 35px;
+    color: #a9bfa8;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.forest-return-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 32px;
+    border: 1px solid #789b72;
+    border-radius: 5px;
+    background: rgba(82, 130, 85, 0.08);
+    color: #c3dfb7;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forest-return-top:hover {
+    background: #a6c99a;
+    color: #0b1510;
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(143, 177, 130, 0.3);
+}
+
+@media (max-width: 600px) {
+    .forest-ending {
+        min-height: 360px;
+        padding: 75px 20px;
+    }
+
+    .forest-ending h2 {
+        font-size: 30px;
+    }
+
+    .forest-ending p {
+        font-size: 14px;
     }
 }
